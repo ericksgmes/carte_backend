@@ -18,7 +18,7 @@ public class FindAllergenService{
         this.jpaAllergenRepository = repository;
     }
 
-    List<AllergenDto> findAll() {
+    public List<AllergenDto> findAll() {
         List<AllergenEntity> allergens = jpaAllergenRepository.findAll();
         return allergens.stream().map(AllergenMapper::toAllergenDto).collect(Collectors.toList());
     }
