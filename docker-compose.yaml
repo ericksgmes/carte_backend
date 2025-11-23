@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=carte
+      - POSTGRES_PASSWORD=carte
+      - POSTGRES_DB=carte_db
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    container_name: my-spring-app
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/carte_db
+      SPRING_DATASOURCE_USERNAME: carte
+      SPRING_DATASOURCE_PASSWORD: carte
+    ports:
+      - "8080:8080"
