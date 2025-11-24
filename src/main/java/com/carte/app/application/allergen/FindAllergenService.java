@@ -2,7 +2,7 @@ package com.carte.app.application.allergen;
 
 import com.carte.app.infrastructure.persistence.entity.AllergenEntity;
 import com.carte.app.infrastructure.persistence.mapper.AllergenMapper;
-import com.carte.app.infrastructure.persistence.repository.AllergenDto;
+import com.carte.app.infrastructure.persistence.repository.dto.AllergenDto;
 import com.carte.app.infrastructure.persistence.repository.JpaAllergenRepository;
 import org.springframework.stereotype.Service;
 

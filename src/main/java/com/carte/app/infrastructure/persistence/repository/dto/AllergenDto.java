@@ -1,4 +1,4 @@
-package com.carte.app.infrastructure.persistence.repository;
+package com.carte.app.infrastructure.persistence.repository.dto;
 
 public record AllergenDto(
         Long id,

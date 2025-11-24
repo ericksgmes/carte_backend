@@ -1,7 +1,7 @@
 package com.carte.app.infrastructure.persistence.mapper;
 
 import com.carte.app.infrastructure.persistence.entity.AllergenEntity;
-import com.carte.app.infrastructure.persistence.repository.AllergenDto;
+import com.carte.app.infrastructure.persistence.repository.dto.AllergenDto;
 
 public class AllergenMapper {
     public static AllergenEntity toAllergenEntity(AllergenDto allergenDto) {

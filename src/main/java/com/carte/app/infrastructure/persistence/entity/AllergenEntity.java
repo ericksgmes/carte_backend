@@ -2,6 +2,8 @@ package com.carte.app.infrastructure.persistence.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "allergen")
 public class AllergenEntity {
@@ -10,6 +12,8 @@ public class AllergenEntity {
     private Long id;
     @Column(nullable = false)
     private String description;
+    @ManyToMany(mappedBy = "allergens")
+    private List<FoodEntity> foods;
 
     public AllergenEntity() {}
 

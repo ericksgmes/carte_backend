@@ -1,6 +1,6 @@
 services:
   db:
-    image: postgres:15
+    image: postgres
     environment:
       - POSTGRES_USER=carte
       - POSTGRES_PASSWORD=carte

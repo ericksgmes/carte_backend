@@ -1,8 +1,7 @@
 package com.carte.app.web;
 
 import com.carte.app.application.allergen.FindAllergenService;
-import com.carte.app.domain.model.Allergen;
-import com.carte.app.infrastructure.persistence.repository.AllergenDto;
+import com.carte.app.infrastructure.persistence.repository.dto.AllergenDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/allergens")
+@RequestMapping("/api/allergens")
 public class AllergenController {
     private final FindAllergenService findAllergenService;
 
